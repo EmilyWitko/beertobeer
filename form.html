@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Extract Recipe</title>
+
+  	<link rel="stylesheet" type="text/css" href="css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header>
+        <div class="center-content">
+    		<nav>
+            	<a href="explore.html">Explore</a>
+                <a href="table.html">Friends</a>
+                <a href="form.html">Recipes</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+	</header>
+        
+    <div id="main" class="center-content">	
+        <div id="top">
+        <h1>Beer-to-Beer</h1>
+            <h2>Beer-to-Beer</h2>
+        </div>
+        
+<img src="images/shadow.png" class="photobanner" alt="Shadow">
+
+	<div id="container">
+        
+        <div id="form">
+            <div id="header">
+		<form>
+		    <h6>My beer's name is:</h6>
+		    <p><input type="text" name="name" placeholder="Enter Name Here"></p>
+            <h6>My beer's stats are:</h6>
+            <p><input type="text" name="color" placeholder="Color (SRM)"><input type="text" name="bitterness" placeholder="Bitterness (IBU)"><input type="text" name="og" placeholder="Original Gravity"><input type="text" name="fg" placeholder="Final Gravity"><input type="text" name="alcohol" placeholder="ABV"></p>
+            </div>
+            
+        <div id="ingredients">
+            <h6>Ingredients:</h6>
+		    <p><input type="text" name="malt" placeholder="malt"> <input type="text" name="weight" placeholder="lbs/ounces"> </p>
+		    <p><input type="text" name="malt" placeholder="malt"> <input type="text" name="weight" placeholder="lbs/ounces"> </p>
+            
+            <div id="maltButton">
+
+            </div>  
+        <button id="addMalt">Add Malt</button>
+            
+            
+            <p><input type="text" name="hops" placeholder="hops"> <input type="text" name="weight" placeholder="lbs/ounces"> <input type="text" name="boiltime" placeholder="boil time"> </p>
+            <p><input type="text" name="hops" placeholder="hops"> <input type="text" name="weight" placeholder="lbs/ounces"> <input type="text" name="boiltime" placeholder="boil time"></p>
+            
+            <div id="hopsButton">
+
+            </div>  
+        <button id="addHops">Add Hops</button>
+            
+            
+            <p><input type="text" name="yeast" placeholder="yeast"></p>
+            
+            <div id="yeastButton">
+
+            </div>  
+        <button id="addYeast">Add Yeast</button>
+            
+    </div>
+            
+
+        <div id="checklist">
+		    <h6>Brew day checklist:</h6>
+		    <p><input type="checkbox" name="Brew pot" value="brewpot"> 5 gallon brew pot</p>
+		    <p><input type="checkbox" name="Fermenter" value="fermenter"> Fermenter</p>
+		    <p><input type="checkbox" name="Lid" value="lid"> Lid</p>
+		    <p><input type="checkbox" name="Airlock" value="airlock"> Airlock</p>
+            <p><input type="checkbox" name="Spoon" value="spoon"> Metal spoon</p>
+            <p><input type="checkbox" name="Grain bag" value="grainbag"> Grain bag</p>
+            <p><input type="checkbox" name="Thermometer" value="thermometer"> Thermometer</p>
+            <p><input type="checkbox" name="Hydrometer" value="hydrometer"> Hydrometer</p>
+            <p><input type="checkbox" name="Sanitizer" value="sanitizer"> Sanitizer</p>
+            <p><input type="checkbox" name="Pot holders" value="potholders"> Pot holders</p>
+            <p><input type="checkbox" name="Timer" value="timer"> Timer</p>
+            <p><input type="checkbox" name="Strainer" value="strainer"> Strainer</p>
+            <p><input type="checkbox" name="Ice bath or wort chiller" value="icebath"> Ice bath <br> or wort chiller</p>
+        </div>
+                
+    <button>Click here for Brewing Instructions!</button>
+            
+        <div id="process">
+            <h6>Process:</h6>
+            <ol>
+                <li>In brewpot, heat 2 gallons of water to 165&deg; F. Turn off heat.</li>
+                <li>Steep malts in grain bag for 1/2 hour in brewpot.</li>
+                <li>Gently drain grain bag into brewpot to get as much liquid out as you can. Do not squeeze bag.</li>
+                <li>Add 2 gallons of water to brewport and bring to a boil.</li>
+                <li>Turn off heat and add #1 MALT to brewpot and stir.</li>
+            </ol>
+        </div>
+
+            <div id="instructions">
+		    <p>Additional Instructions: </p>
+		    <p><textarea name="message" rows="5" cols="20">Include any final thoughts here</textarea></p>
+		    <p><input type="submit"></p>
+            </div>
+		</form>
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/form.js"></script>
+        
+</body>
+</html>

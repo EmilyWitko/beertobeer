@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beer-to-Beer</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+      
+      
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/form.js"></script>
+      
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(40.675453, -73.960228),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+      
+  </head>
+  <body>
+      
+       <header>
+        <div class="center-content">
+    		<nav>
+            	<a href="explore.html">Explore</a>
+                <a href="table.html">Friends</a>
+                <a href="form.html">Recipes</a>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+	</header>
+        
+    <div id="main" class="center-content">	
+        <div id="top">
+        <h1>Beer-to-Beer</h1>
+            <h2>Beer-to-Beer</h2>
+        </div>
+        
+    <img src="images/shadow.png" class="photobanner" alt="Shadow">
+        
+    <div id="map_canvas"></div>
+        
+    <div id="maptext">
+        <h7>Brooklyn, NY!</h7>
+    </div>
+        
+</body>
+</html>
